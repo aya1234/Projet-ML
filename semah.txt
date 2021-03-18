@@ -1,0 +1,14 @@
+import numpy as np
+import pandas as pd
+df = pd.read_csv('diabetes.csv') #dataframe
+df.head() #loulénin
+columns = ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age']
+labes = df ['Outcome'].values
+features = df [list(columns)].values
+
+#trainingset and testingset : training to train the model
+#testing : test the model
+#test size : data size that we will use in training (70% train, 30% test)
+#estimators : decision trees
+#fit : function of training
+#RandomForestClassifier : decision trees (we initialize)
